@@ -175,25 +175,28 @@ We enhanced the ASRAEL KG with additional relations (similarly to the ones in FA
 Knowledge Graph summarization comprises two tasks: the selection of pertinent information from the knowledge graph, and the text generation based on the extracted data.
 
 \subsection{Relevant Information Selection}
-We have implemented a graph search algorithm tailored to the identification of essential nodes for the narrative. This algorithm, in alignment with a predefined heuristic, prioritizes the selection of the most critical nodes corresponding to the 4W, which we identify as necessary for describing the narrative. Narrative filters have been established in accordance with SEM, encompassing the 4W.
+%We have implemented a graph search algorithm tailored to the identification of essential nodes for the narrative. This algorithm, in alignment with a predefined heuristic, prioritizes the selection of the most critical nodes corresponding to the 4W, which we identify as necessary for describing the narrative. Narrative filters have been established in accordance with SEM, encompassing the 4W.
 % Upon the activation of a filter to filter out certain properties, nodes of that particular property are disregarded during the search process.
-The \textit{expansion} of a node is defined as retrieving the nodes directly connected to the selected node. The algorithm's operational sequence comprises the following steps:
-\begin{enumerate}
- \item initialise a sub-graph \textit{SG};
- \item initialise pending nodes \textit{PN}, by adding a defined starting node to it;
- \item compute scores for nodes in \textit{PN}, using the \textit{Predicate Object Frequency} heuristic;\footnote{Edges containing the tuple (predicate, object) that are frequently used in the graph will be preferred.}
- \item expand nodes with the highest ranking; %Not sure what threshold (could not find it in graph search paper)
- \item apply the narrative filters on retrieved nodes, keeping only the relevant nodes;
- \item add the relevant nodes to \textit{PN}, and to the output \textit{SG};
- \item Repeat steps 3 to 6 until the maximum number of iterations is reached.
-\end{enumerate}
+%The \textit{expansion} of a node is defined as retrieving the nodes directly connected to the selected node. The algorithm's operational sequence comprises the following steps:
+%\begin{enumerate}
+% \item initialise a sub-graph \textit{SG};
+% \item initialise pending nodes \textit{PN}, by adding a defined starting node to it;
+% \item compute scores for nodes in \textit{PN}, using the \textit{Predicate Object Frequency} heuristic;\footnote{Edges containing the tuple (predicate, object) that are frequently used in the graph will be preferred.}
+% \item expand nodes with the highest ranking; %Not sure what threshold (could not find it in graph search paper)
+% \item apply the narrative filters on retrieved nodes, keeping only the relevant nodes;
+% \item add the relevant nodes to \textit{PN}, and to the output \textit{SG};
+% \item Repeat steps 3 to 6 until the maximum number of iterations is reached.
+%\end{enumerate}
 
 %We use the "predicate object frequency" heuristic, this builds on the assumption that if an entity has many links to it, it indicates it is more relevant. The predicate \texttt{schema:about} is filtered out, since there already exists a link between the article and the event (with \texttt{schema:subjectOf}).
 % To test the model, initially, the event ``2021 storming of the United States Capitol" has been chosen (start node). This event is, as the name suggests, about the storming of the Capitol in the United States. This event contains the 4W, and is the subject of 65 news articles.
 
-During preliminary tests on a subset of events, we found that the node expansion easily includes other events than the starting one, because many events and articles that link to the same places, times, etc. are eventually included in the expansion. This may lead to an extracted subgraph that is not strictly focused on the original event of interest. In particular, some mentions\footnote{Sub-events in a narrative graph, see \textit{trigger1}, \textit{trigger2} in Table \ref{tab:rebel_data}.} may not be expanded, since the algorithm may pick another path. To overcome this issue, a SPARQL query has been used to retrieve the most important 4W nodes, according to the \textit{Predicate Object Frequency}.
+%During preliminary tests on a subset of events, we found that the node expansion easily includes other events than the starting one, because many events and articles that link to the same places, times, etc. are eventually included in the expansion. This may lead to an extracted subgraph that is not strictly focused on the original event of interest. In particular, some mentions\footnote{Sub-events in a narrative graph, see \textit{trigger1}, \textit{trigger2} in Table \ref{tab:rebel_data}.} may not be expanded, since the algorithm may pick another path. To overcome this issue, a SPARQL query has been used to retrieve the most important 4W nodes, according to the \textit{Predicate Object Frequency}.
+
+A SPARQL query has been used for the identification of essential nodes for the narrative. This query, prioritizes the selection 4W nodes, with a higher frequency of incoming edges. Mentions are selected similarly; the larger the cluster of mentions is, the higher the priority. Since we face a limitation on the number of input tokens of the text generation model, up to three mentions are selected.
 
 The quality of the output depends largely on the quality the output of previous steps (relation extraction and co-reference resolution). Future work aims to enhance the accuracy of both these tasks and explore methods for identifying indirectly linked relevant nodes to selected events.
+
 
 \subsection{Text Generation from Knowledge Graphs}
 As anticipated in Section \ref{sec:related-work}, using a PLM instead of training a language model from scratch can lead to better results. Furthermore, incorporating the graph's topology into the model has been shown to generate better natural text. The JointGT model \cite{JointGT} incorporates both these characteristics, hence, we adopted this method. The authors pre-trained this model on the KGText dataset~\cite{KGtext}, consisting of 7 million graph-text pairs extracted from the English Wikidump.\footnote{\url{https://dumps.wikimedia.org/}} It includes around 1.8 million entities and 1,210 relations.
@@ -213,19 +216,20 @@ Combined         & 14,676          & 1,820         & 1,708          \\ \hline
 \label{tab:splits_dataset_jointgt}
 \end{table}
 
-The model undergoes fine-tuning on the WebNLG dataset. We refer to the original model as \textit{base model}, and the model fine-tuned on the combined dataset as \textit{combined model}.\footnote{The model was replicated using the same parameters from the original paper, except for the batch size lowered due to memory constraints. The parameters are \textit{Learning rate}: 0.000025, \textit{Batch size}: 4, \textit{Epochs}: 10, \textit{Optimizer}: Adam.}
+The model undergoes fine-tuning on the WebNLG dataset. We refer to the original model as \textit{base model}, and the model fine-tuned on the combined dataset as \textit{combined model}.\footnote{The model was replicated using the same parameters from the original paper, except for the batch size lowered due to memory constraints. The parameters are \textit{Learning rate}: 0.000025, \textit{Batch size}: 4, \textit{Epochs}: 10, \textit{Optimizer}: Adam. \textit{Early stopping}: 10 epochs}
 
 \section{Results}
 \label{sec:results_jointGT}
 
 \subsection{Quantitative analysis.}
 %Maybe make it more clear that also testing was done on different datasets
-\begin{figure}[ht] %maybe decrease the height of this graph
-    \centering
-    \includegraphics[width=0.60\textwidth]{Images/jointGT_training.png}
-    \caption{Computed metrics per evaluation (each 800 steps). Vertical line indicates stop of training on the non-combined dataset}
-    \label{fig:training_jointgt}
-\end{figure}
+
+%\begin{figure}[ht] %maybe decrease the height of this graph
+%    \centering
+%    \includegraphics[width=0.60\textwidth]{Images/jointGT_training.png}
+%    \caption{Computed metrics per evaluation (each 800 steps). Vertical line indicates stop of training on the non-combined dataset}
+%    \label{fig:training_jointgt}
+%\end{figure}
 
 \begin{table}[ht]
 \centering
@@ -243,7 +247,8 @@ The model undergoes fine-tuning on the WebNLG dataset. We refer to the original 
 \label{tab:training_jointgt}
 \end{table}
 
-Figure~\ref{fig:training_jointgt} reports the BLEU, METEOR and ROUGE scores on the evaluation set during training.\footnote{The model stops training if no improvement has been made in 10 evaluations} Together with Table \ref{tab:training_jointgt}, it reveals important insights into the model's performance. The ROUGE metric indicates a relatively high level of performance, suggesting that the model generates text that closely aligns with the reference texts in terms of information. In contrast, the BLEU metric exhibits slightly lower performance, implying that the model's output words differ slightly from those in the reference texts. The relatively low METEOR score could be attributed to how the predicted and reference texts are aligned when calculating the score. It is worth noting that the base model's performance on the test set aligns closely with the results reported in the original JointGT paper~\cite{JointGT}.
+%Figure~\ref{fig:training_jointgt} reports the BLEU, METEOR and ROUGE scores on the evaluation set during training.\footnote{The model stops training if no improvement has been made in 10 evaluations} Together with Table \ref{tab:training_jointgt}, it reveals important insights into the model's performance. The ROUGE metric indicates a relatively high level of performance, suggesting that the model generates text that closely aligns with the reference texts in terms of information. In contrast, the BLEU metric exhibits slightly lower performance, implying that the model's output words differ slightly from those in the reference texts. The relatively low METEOR score could be attributed to how the predicted and reference texts are aligned when calculating the score. It is worth noting that the base model's performance on the test set aligns closely with the results reported in the original JointGT paper~\cite{JointGT}.
+Table \ref{tab:training_jointgt}, reveals important insights into the model's performance. The ROUGE metric indicates a relatively high level of performance, suggesting that the model generates text that closely aligns with the reference texts in terms of information. In contrast, the BLEU metric exhibits slightly lower performance, implying that the model's output words differ slightly from those in the reference texts. The relatively low METEOR score could be attributed to how the predicted and reference texts are aligned when calculating the score. It is worth noting that the base model's performance on the test set aligns closely with the results reported in the original JointGT paper~\cite{JointGT}.
 
 The model that was trained on the combined dataset performed slightly worse for all three metrics than the model that was trained on the base WebNLG data. This can be explained by two considerations. First, it is evident in Table \ref{tab:training_jointgt} that tests on FARO have very low performances. Secondly, the FARO dataset only accounts for a relatively small proportion in the combined dataset (Table \ref{tab:splits_dataset_jointgt}). To better understand the reasons, a qualitative analysis is proposed in the next section.
 

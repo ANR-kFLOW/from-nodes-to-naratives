@@ -1,0 +1,165 @@
+\begin{thebibliography}{30}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Green et~al.(2004)Green, Brock, and Kaufman}]{green2004understanding}
+\bibinfo{author}{M.~C. Green}, \bibinfo{author}{T.~C. Brock}, \bibinfo{author}{G.~F. Kaufman},
+\newblock \bibinfo{title}{Understanding media enjoyment: The role of transportation into narrative worlds},
+\newblock \bibinfo{journal}{Communication theory} \bibinfo{volume}{14} (\bibinfo{year}{2004}) \bibinfo{pages}{311--327}.
+%Type = Inproceedings
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova}]{BERT}
+\bibinfo{author}{J.~Devlin}, \bibinfo{author}{M.~Chang}, \bibinfo{author}{K.~Lee}, \bibinfo{author}{K.~Toutanova},
+\newblock \bibinfo{title}{{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}},
+\newblock in: \bibinfo{booktitle}{2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, {NAACL-HLT}}, \bibinfo{publisher}{ACL}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{4171--4186}. \DOIprefix\doi{10.18653/v1/n19-1423}.
+%Type = Inproceedings
+\bibitem[{Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, and Amodei}]{GPT-3}
+\bibinfo{author}{T.~Brown}, \bibinfo{author}{B.~Mann}, \bibinfo{author}{N.~Ryder}, \bibinfo{author}{M.~Subbiah}, \bibinfo{author}{J.~D. Kaplan}, \bibinfo{author}{P.~Dhariwal}, \bibinfo{author}{A.~Neelakantan}, \bibinfo{author}{P.~Shyam}, \bibinfo{author}{G.~Sastry}, \bibinfo{author}{A.~Askell}, \bibinfo{author}{S.~Agarwal}, \bibinfo{author}{A.~Herbert-Voss}, \bibinfo{author}{G.~Krueger}, \bibinfo{author}{T.~Henighan}, \bibinfo{author}{R.~Child}, \bibinfo{author}{A.~Ramesh}, \bibinfo{author}{D.~Ziegler}, \bibinfo{author}{J.~Wu}, \bibinfo{author}{C.~Winter}, \bibinfo{author}{C.~Hesse}, \bibinfo{author}{M.~Chen}, \bibinfo{author}{E.~Sigler}, \bibinfo{author}{M.~Litwin}, \bibinfo{author}{S.~Gray}, \bibinfo{author}{B.~Chess}, \bibinfo{author}{J.~Clark}, \bibinfo{author}{C.~Berner}, \bibinfo{author}{S.~McCandlish}, \bibinfo{author}{A.~Radford}, \bibinfo{author}{I.~Sutskever}, \bibinfo{author}{D.~Amodei},
+\newblock \bibinfo{title}{{Language Models are Few-Shot Learners}},
+\newblock in: \bibinfo{booktitle}{Advances in Neural Information Processing Systems}, volume~\bibinfo{volume}{33}, \bibinfo{publisher}{Curran Associates, Inc.}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{1877--1901}.
+%Type = Inproceedings
+\bibitem[{Dodge et~al.(2021)Dodge, Sap, Marasovi{\'c}, Agnew, Ilharco, Groeneveld, Mitchell, and Gardner}]{documenting_corpora}
+\bibinfo{author}{J.~Dodge}, \bibinfo{author}{M.~Sap}, \bibinfo{author}{A.~Marasovi{\'c}}, \bibinfo{author}{W.~Agnew}, \bibinfo{author}{G.~Ilharco}, \bibinfo{author}{D.~Groeneveld}, \bibinfo{author}{M.~Mitchell}, \bibinfo{author}{M.~Gardner},
+\newblock \bibinfo{title}{{Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus}},
+\newblock in: \bibinfo{booktitle}{2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, \bibinfo{publisher}{ACL}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{1286--1305}. \DOIprefix\doi{10.18653/v1/2021.emnlp-main.98}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2021)Li, Tang, Zhao, and Wen}]{PLM_survey}
+\bibinfo{author}{J.~Li}, \bibinfo{author}{T.~Tang}, \bibinfo{author}{W.~X. Zhao}, \bibinfo{author}{J.-R. Wen},
+\newblock \bibinfo{title}{{Pretrained Language Model for Text Generation: A Survey}},
+\newblock in: \bibinfo{booktitle}{Thirtieth International Joint Conference on Artificial Intelligence (IJCAI), Survey Track}, \bibinfo{publisher}{IJCAI Organization}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{4492--4499}. \DOIprefix\doi{10.24963/ijcai.2021/612}.
+%Type = Inproceedings
+\bibitem[{Malkin et~al.(2022)Malkin, Wang, and Jojic}]{semantic_coherence}
+\bibinfo{author}{N.~Malkin}, \bibinfo{author}{Z.~Wang}, \bibinfo{author}{N.~Jojic},
+\newblock \bibinfo{title}{{Coherence boosting: When your pretrained language model is not paying enough attention}},
+\newblock in: \bibinfo{booktitle}{60th Annual Meeting of the Association for Computational Linguistics}, \bibinfo{year}{2022}.
+%Type = Article
+\bibitem[{Ji et~al.(2022)Ji, Pan, Cambria, Marttinen, and Yu}]{KG_survey}
+\bibinfo{author}{S.~Ji}, \bibinfo{author}{S.~Pan}, \bibinfo{author}{E.~Cambria}, \bibinfo{author}{P.~Marttinen}, \bibinfo{author}{P.~S. Yu},
+\newblock \bibinfo{title}{{A Survey on Knowledge Graphs: Representation, Acquisition, and Applications}},
+\newblock \bibinfo{journal}{IEEE Transactions on Neural Networks and Learning Systems} \bibinfo{volume}{33} (\bibinfo{year}{2022}) \bibinfo{pages}{494--514}. \DOIprefix\doi{10.1109/TNNLS.2021.3070843}.
+%Type = Article
+\bibitem[{Gottschalk and Demidova(2019)}]{gottschalk2019eventkg}
+\bibinfo{author}{S.~Gottschalk}, \bibinfo{author}{E.~Demidova},
+\newblock \bibinfo{title}{{EventKG -- the hub of event knowledge on the web -- and biographical timeline generation}},
+\newblock \bibinfo{journal}{Semantic Web} \bibinfo{volume}{10} (\bibinfo{year}{2019}) \bibinfo{pages}{1039--1070}. \bibinfo{note}{6}.
+%Type = Article
+\bibitem[{Hoffart et~al.(2013)Hoffart, Suchanek, Berberich, and Weikum}]{hoffart2013yago2}
+\bibinfo{author}{J.~Hoffart}, \bibinfo{author}{F.~M. Suchanek}, \bibinfo{author}{K.~Berberich}, \bibinfo{author}{G.~Weikum},
+\newblock \bibinfo{title}{{YAGO2: A spatially and temporally enhanced knowledge base from Wikipedia}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{194} (\bibinfo{year}{2013}) \bibinfo{pages}{28--61}.
+%Type = Inproceedings
+\bibitem[{Rebboud et~al.(2022)Rebboud, Lisena, and Troncy}]{beyond_causality}
+\bibinfo{author}{Y.~Rebboud}, \bibinfo{author}{P.~Lisena}, \bibinfo{author}{R.~Troncy},
+\newblock \bibinfo{title}{{Beyond Causality: Representing Event Relations in Knowledge Graphs}},
+\newblock in: \bibinfo{booktitle}{Knowledge Engineering and Knowledge Management}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{121--135}. \DOIprefix\doi{10.1007/978-3-031-17105-5\_9}.
+%Type = Inproceedings
+\bibitem[{Rebboud et~al.(2023)Rebboud, Lisena, and Troncy}]{sem_data_aug}
+\bibinfo{author}{Y.~Rebboud}, \bibinfo{author}{P.~Lisena}, \bibinfo{author}{R.~Troncy},
+\newblock \bibinfo{title}{{Prompt-based Data Augmentation for Semantically-Precise Event Relation Classification}},
+\newblock in: \bibinfo{booktitle}{Semantic Methods for Events and Stories workshop (SEMMES)}, \bibinfo{address}{Hersonissos, Greece}, \bibinfo{year}{2023}.
+%Type = Inproceedings
+\bibitem[{Gardent et~al.(2017)Gardent, Shimorina, Narayan, and Perez-Beltrachini}]{gardent-etal-2017-creating}
+\bibinfo{author}{C.~Gardent}, \bibinfo{author}{A.~Shimorina}, \bibinfo{author}{S.~Narayan}, \bibinfo{author}{L.~Perez-Beltrachini},
+\newblock \bibinfo{title}{{Creating Training Corpora for {NLG} Micro-Planners}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Vancouver, Canada}, \bibinfo{year}{2017}, pp. \bibinfo{pages}{179--188}. \DOIprefix\doi{10.18653/v1/P17-1017}.
+%Type = Inproceedings
+\bibitem[{Blin(2022)}]{Build_narrative}
+\bibinfo{author}{I.~Blin},
+\newblock \bibinfo{title}{{Building Narrative Structures from Knowledge Graphs}},
+\newblock in: \bibinfo{booktitle}{The Semantic Web: ESWC 2022 Satellite Events}, \bibinfo{publisher}{Springer}, \bibinfo{address}{Germany}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{234--251}.
+%Type = Article
+\bibitem[{{van Hage} et~al.(2011){van Hage}, Malaisé, Segers, Hollink, and Schreiber}]{SEM}
+\bibinfo{author}{W.~R. {van Hage}}, \bibinfo{author}{V.~Malaisé}, \bibinfo{author}{R.~Segers}, \bibinfo{author}{L.~Hollink}, \bibinfo{author}{G.~Schreiber},
+\newblock \bibinfo{title}{{Design and use of the Simple Event Model (SEM)}},
+\newblock \bibinfo{journal}{Journal of Web Semantics} \bibinfo{volume}{9} (\bibinfo{year}{2011}) \bibinfo{pages}{128--136}.
+%Type = Article
+\bibitem[{Allen(1983)}]{allen}
+\bibinfo{author}{J.~F. Allen},
+\newblock \bibinfo{title}{{Maintaining Knowledge about Temporal Intervals}},
+\newblock \bibinfo{journal}{Commun. ACM} \bibinfo{volume}{26} (\bibinfo{year}{1983}) \bibinfo{pages}{832–843}. \DOIprefix\doi{10.1145/182.358434}.
+%Type = Article
+\bibitem[{Jindal et~al.(2014)Jindal, Bawa, and Batra}]{JINDAL2014416}
+\bibinfo{author}{V.~Jindal}, \bibinfo{author}{S.~Bawa}, \bibinfo{author}{S.~Batra},
+\newblock \bibinfo{title}{{A review of ranking approaches for semantic search on Web}},
+\newblock \bibinfo{journal}{Information Processing \& Management} \bibinfo{volume}{50} (\bibinfo{year}{2014}) \bibinfo{pages}{416--425}.
+%Type = Article
+\bibitem[{Blin et~al.(2023)Blin, Tiddi, {van Trijp}, and {ten Teije}}]{graph_traversal}
+\bibinfo{author}{I.~Blin}, \bibinfo{author}{I.~Tiddi}, \bibinfo{author}{R.~{van Trijp}}, \bibinfo{author}{A.~{ten Teije}},
+\newblock \bibinfo{title}{{Identifying graph traversal strategies to build narrative graphs}},
+\newblock \bibinfo{journal}{Under review}  (\bibinfo{year}{2023}).
+%Type = Inproceedings
+\bibitem[{Yang and Tiddi(2020)}]{creative_story}
+\bibinfo{author}{X.~Yang}, \bibinfo{author}{I.~Tiddi},
+\newblock \bibinfo{title}{{Creative Storytelling with Language Models and Knowledge Graphs}},
+\newblock in: \bibinfo{booktitle}{International Conference on Information and Knowledge Management}, \bibinfo{year}{2020}.
+%Type = Article
+\bibitem[{Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, and Sutskever}]{GPT-2}
+\bibinfo{author}{A.~Radford}, \bibinfo{author}{J.~Wu}, \bibinfo{author}{R.~Child}, \bibinfo{author}{D.~Luan}, \bibinfo{author}{D.~Amodei}, \bibinfo{author}{I.~Sutskever},
+\newblock \bibinfo{title}{{Language Models are Unsupervised Multitask Learners}},
+\newblock \bibinfo{journal}{OpenAI blog} \bibinfo{volume}{1.8} (\bibinfo{year}{2019}).
+%Type = Inproceedings
+\bibitem[{Ribeiro et~al.(2021)Ribeiro, Schmitt, Sch{\"u}tze, and Gurevych}]{inv_PLM}
+\bibinfo{author}{L.~F.~R. Ribeiro}, \bibinfo{author}{M.~Schmitt}, \bibinfo{author}{H.~Sch{\"u}tze}, \bibinfo{author}{I.~Gurevych},
+\newblock \bibinfo{title}{{Investigating Pretrained Language Models for Graph-to-Text Generation}},
+\newblock in: \bibinfo{booktitle}{3rd Workshop on Natural Language Processing for Conversational AI}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Online}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{211--227}.
+%Type = Inproceedings
+\bibitem[{Lewis et~al.(2019)Lewis, Liu, Goyal, Ghazvininejad, rahman Mohamed, Levy, Stoyanov, and Zettlemoyer}]{BART}
+\bibinfo{author}{M.~Lewis}, \bibinfo{author}{Y.~Liu}, \bibinfo{author}{N.~Goyal}, \bibinfo{author}{M.~Ghazvininejad}, \bibinfo{author}{A.~rahman Mohamed}, \bibinfo{author}{O.~Levy}, \bibinfo{author}{V.~Stoyanov}, \bibinfo{author}{L.~Zettlemoyer},
+\newblock \bibinfo{title}{{BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension}},
+\newblock in: \bibinfo{booktitle}{Annual Meeting of the Association for Computational Linguistics}, \bibinfo{year}{2019}.
+%Type = Article
+\bibitem[{Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, and Liu}]{T5}
+\bibinfo{author}{C.~Raffel}, \bibinfo{author}{N.~Shazeer}, \bibinfo{author}{A.~Roberts}, \bibinfo{author}{K.~Lee}, \bibinfo{author}{S.~Narang}, \bibinfo{author}{M.~Matena}, \bibinfo{author}{Y.~Zhou}, \bibinfo{author}{W.~Li}, \bibinfo{author}{P.~J. Liu},
+\newblock \bibinfo{title}{{Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer}},
+\newblock \bibinfo{journal}{J. Mach. Learn. Res.} \bibinfo{volume}{21} (\bibinfo{year}{2020}).
+%Type = Inproceedings
+\bibitem[{Koncel-Kedziorski et~al.(2019)Koncel-Kedziorski, Bekal, Luan, Lapata, and Hajishirzi}]{AGENDA_KG}
+\bibinfo{author}{R.~Koncel-Kedziorski}, \bibinfo{author}{D.~Bekal}, \bibinfo{author}{Y.~Luan}, \bibinfo{author}{M.~Lapata}, \bibinfo{author}{H.~Hajishirzi},
+\newblock \bibinfo{title}{{Text Generation from Knowledge Graphs with Graph Transformers}},
+\newblock in: \bibinfo{booktitle}{NAACL}, \bibinfo{year}{2019}.
+%Type = Inproceedings
+\bibitem[{Ke et~al.(2021)Ke, Ji, Ran, Cui, Wang, Song, Zhu, and Huang}]{JointGT}
+\bibinfo{author}{P.~Ke}, \bibinfo{author}{H.~Ji}, \bibinfo{author}{Y.~Ran}, \bibinfo{author}{X.~Cui}, \bibinfo{author}{L.~Wang}, \bibinfo{author}{L.~Song}, \bibinfo{author}{X.~Zhu}, \bibinfo{author}{M.~Huang},
+\newblock \bibinfo{title}{{JointGT: Graph-Text Joint Representation Learning for Text Generation from Knowledge Graphs}},
+\newblock in: \bibinfo{booktitle}{Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021}, \bibinfo{publisher}{ACL}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{2526--2538}.
+%Type = Inproceedings
+\bibitem[{Liu et~al.(2021)Liu, He, Xu, Tan, and Wu}]{DRAW}
+\bibinfo{author}{L.~Liu}, \bibinfo{author}{M.~He}, \bibinfo{author}{G.~Xu}, \bibinfo{author}{M.~Tan}, \bibinfo{author}{Q.~Wu},
+\newblock \bibinfo{title}{{How to Train Your Agent to Read and Write}},
+\newblock in: \bibinfo{booktitle}{AAAI Conference on Artificial Intelligence}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{13397--13405}.
+%Type = Inproceedings
+\bibitem[{Gardent et~al.(2017)Gardent, Shimorina, Narayan, and Perez-Beltrachini}]{WebNLG}
+\bibinfo{author}{C.~Gardent}, \bibinfo{author}{A.~Shimorina}, \bibinfo{author}{S.~Narayan}, \bibinfo{author}{L.~Perez-Beltrachini},
+\newblock \bibinfo{title}{{The WebNLG Challenge: Generating Text from RDF Data}},
+\newblock in: \bibinfo{booktitle}{10th International Conference on Natural Language Generation}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Santiago de Compostela, Spain}, \bibinfo{year}{2017}, pp. \bibinfo{pages}{124--133}.
+%Type = Inproceedings
+\bibitem[{Rudnik et~al.(2019)Rudnik, Ehrhart, Ferret, Teyssou, Troncy, and Tannier}]{ASRAEL}
+\bibinfo{author}{C.~Rudnik}, \bibinfo{author}{T.~Ehrhart}, \bibinfo{author}{O.~Ferret}, \bibinfo{author}{D.~Teyssou}, \bibinfo{author}{R.~Troncy}, \bibinfo{author}{X.~Tannier},
+\newblock \bibinfo{title}{{Searching News Articles Using an Event Knowledge Graph Leveraged by Wikidata}},
+\newblock in: \bibinfo{booktitle}{2019 World Wide Web Conference}, WWW, \bibinfo{publisher}{ACL}, \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2019}, p. \bibinfo{pages}{1232–1239}.
+%Type = Inproceedings
+\bibitem[{Huguet~Cabot and Navigli(2021)}]{REBEL}
+\bibinfo{author}{P.-L. Huguet~Cabot}, \bibinfo{author}{R.~Navigli},
+\newblock \bibinfo{title}{{REBEL: Relation Extraction By End-to-end Language generation}},
+\newblock in: \bibinfo{booktitle}{Findings of the Association for Computational Linguistics: EMNLP 2021}, \bibinfo{publisher}{ACL}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{2370--2381}. \URLprefix \url{https://aclanthology.org/2021.findings-emnlp.204}.
+%Type = Inproceedings
+\bibitem[{Barhom et~al.(2019)Barhom, Shwartz, Eirew, Bugert, Reimers, and Dagan}]{barhom-etal-2019-revisiting}
+\bibinfo{author}{S.~Barhom}, \bibinfo{author}{V.~Shwartz}, \bibinfo{author}{A.~Eirew}, \bibinfo{author}{M.~Bugert}, \bibinfo{author}{N.~Reimers}, \bibinfo{author}{I.~Dagan},
+\newblock \bibinfo{title}{{Revisiting Joint Modeling of Cross-document Entity and Event Coreference Resolution}},
+\newblock in: \bibinfo{booktitle}{57th Annual Meeting of the Association for Computational Linguistics}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Florence, Italy}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{4179--4189}.
+%Type = Inproceedings
+\bibitem[{Chen et~al.(2020)Chen, Su, Yan, and Wang}]{KGtext}
+\bibinfo{author}{W.~Chen}, \bibinfo{author}{Y.~Su}, \bibinfo{author}{X.~Yan}, \bibinfo{author}{W.~Y. Wang},
+\newblock \bibinfo{title}{{KGPT: Knowledge-Grounded Pre-Training for Data-to-Text Generation}},
+\newblock in: \bibinfo{booktitle}{2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Online}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{8635--8648}.
+
+\end{thebibliography}
