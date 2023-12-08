@@ -2,6 +2,17 @@
 \providecommand*\new@tpo@label[2]{}
 \bibstyle{elsarticle-num-names}
 \providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \providecommand\BKM@entry[2]{}
@@ -60,8 +71,8 @@
 \BKM@entry{id=6,dest={73756273656374696F6E2E342E32},srcline={201}}{5C3337365C3337375C303030345C3030302E5C303030325C3030305C3034305C303030545C303030655C303030785C303030745C3030305C3034305C303030475C303030655C3030306E5C303030655C303030725C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C303030665C303030725C3030306F5C3030306D5C3030305C3034305C3030304B5C3030306E5C3030306F5C303030775C3030306C5C303030655C303030645C303030675C303030655C3030305C3034305C303030475C303030725C303030615C303030705C303030685C30303073}
 \citation{JointGT}
 \citation{KGtext}
-\BKM@entry{id=7,dest={73656374696F6E2E35},srcline={221}}{5C3337365C3337375C303030355C3030305C3034305C303030525C303030655C303030735C303030755C3030306C5C303030745C30303073}
-\BKM@entry{id=8,dest={73756273656374696F6E2E352E31},srcline={224}}{5C3337365C3337375C303030355C3030302E5C303030315C3030305C3034305C303030515C303030755C303030615C3030306E5C303030745C303030695C303030745C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030615C3030306E5C303030615C3030306C5C303030795C303030735C303030695C303030735C3030302E}
+\BKM@entry{id=7,dest={73656374696F6E2E35},srcline={222}}{5C3337365C3337375C303030355C3030305C3034305C303030525C303030655C303030735C303030755C3030306C5C303030745C30303073}
+\BKM@entry{id=8,dest={73756273656374696F6E2E352E31},srcline={225}}{5C3337365C3337375C303030355C3030302E5C303030315C3030305C3034305C303030515C303030755C303030615C3030306E5C303030745C303030695C303030745C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030615C3030306E5C303030615C3030306C5C303030795C303030735C303030695C30303073}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Knowledge graph summarization}{4}{section.4}\protected@file@percent }
 \newlabel{sec:KGS}{{4}{4}{Knowledge graph summarization}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Relevant Information Selection}{4}{subsection.4.1}\protected@file@percent }
@@ -69,10 +80,10 @@
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Sizes of the datasets used for training and evaluating the JointGT model}}{4}{table.2}\protected@file@percent }
 \newlabel{tab:splits_dataset_jointgt}{{2}{4}{Sizes of the datasets used for training and evaluating the JointGT model}{table.2}{}}
 \citation{JointGT}
-\BKM@entry{id=9,dest={73756273656374696F6E2E352E32},srcline={255}}{5C3337365C3337375C303030355C3030302E5C303030325C3030305C3034305C303030515C303030755C303030615C3030306C5C303030695C303030745C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030615C3030306E5C303030615C3030306C5C303030795C303030735C303030695C303030735C3030302E}
+\BKM@entry{id=9,dest={73756273656374696F6E2E352E32},srcline={257}}{5C3337365C3337375C303030355C3030302E5C303030325C3030305C3034305C303030515C303030755C303030615C3030306C5C303030695C303030745C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030615C3030306E5C303030615C3030306C5C303030795C303030735C303030695C303030735C3030302E}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{section.5}\protected@file@percent }
 \newlabel{sec:results_jointGT}{{5}{5}{Results}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Quantitative analysis.}{5}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Quantitative analysis}{5}{subsection.5.1}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The performance metrics of the best performing model on their corresponding validation and test set -- either WebNLG or the combined set. Both models are evaluated also on the FARO test set}}{5}{table.3}\protected@file@percent }
 \newlabel{tab:training_jointgt}{{3}{5}{The performance metrics of the best performing model on their corresponding validation and test set -- either WebNLG or the combined set. Both models are evaluated also on the FARO test set}{table.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Qualitative analysis.}{5}{subsection.5.2}\protected@file@percent }
@@ -81,16 +92,16 @@
 \newlabel{tab:combined_base_farotest-set}{{4}{6}{Sample of the FARO test-set and the generated output of the base- and combined model}{table.4}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Sample of the WebNLG test-set and the generated output of the base model.}}{6}{table.5}\protected@file@percent }
 \newlabel{tab:base_WebNLGtest-set}{{5}{6}{Sample of the WebNLG test-set and the generated output of the base model}{table.5}{}}
-\BKM@entry{id=10,dest={73756273656374696F6E2E352E33},srcline={284}}{5C3337365C3337375C303030355C3030302E5C303030335C3030305C3034305C303030555C303030735C303030655C303030725C3030305C3034305C303030455C303030765C303030615C3030306C5C303030755C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C3030306F5C3030306E5C3030305C3034305C303030415C303030535C303030525C303030415C303030455C3030304C}
+\BKM@entry{id=10,dest={73756273656374696F6E2E352E33},srcline={287}}{5C3337365C3337375C303030355C3030302E5C303030335C3030305C3034305C303030555C303030735C303030655C303030725C3030305C3034305C303030455C303030765C303030615C3030306C5C303030755C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C3030306F5C3030306E5C3030305C3034305C303030415C303030535C303030525C303030415C303030455C3030304C}
 \citation{JointGT}
-\BKM@entry{id=11,dest={73756273656374696F6E2E352E34},srcline={315}}{5C3337365C3337375C303030355C3030302E5C303030345C3030305C3034305C303030555C303030735C303030655C303030725C3030305C3034305C303030455C303030765C303030615C3030306C5C303030755C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C3030306F5C3030306E5C3030305C3034305C303030615C3030306E5C3030305C3034305C3030304D5C303030615C3030306E5C303030755C303030615C3030306C5C3030306C5C303030795C3030305C3034305C303030415C3030306E5C3030306E5C3030306F5C303030745C303030615C303030745C303030655C303030645C3030305C3034305C303030455C303030765C303030655C3030306E5C30303074}
+\BKM@entry{id=11,dest={73756273656374696F6E2E352E34},srcline={319}}{5C3337365C3337375C303030355C3030302E5C303030345C3030305C3034305C303030555C303030735C303030655C303030725C3030305C3034305C303030455C303030765C303030615C3030306C5C303030755C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C3030306F5C3030306E5C3030305C3034305C303030615C3030306E5C3030305C3034305C3030304D5C303030615C3030306E5C303030755C303030615C3030306C5C3030306C5C303030795C3030305C3034305C303030415C3030306E5C3030306E5C3030306F5C303030745C303030615C303030745C303030655C303030645C3030305C3034305C303030455C303030765C303030655C3030306E5C30303074}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}User Evaluation on ASRAEL}{7}{subsection.5.3}\protected@file@percent }
 \newlabel{sec:result_gen_text_nodes}{{5.3}{7}{User Evaluation on ASRAEL}{subsection.5.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Fleiss' Kappa ($\kappa $) indicates perfect, and moderate agreement between annotators. The wins, losses, and ties when comparing the combined model against the base model are indicated in percentages. No model was significantly better than another with a significance level of 0.05.}}{7}{table.6}\protected@file@percent }
 \newlabel{tab:event_annotations}{{6}{7}{Fleiss' Kappa ($\kappa $) indicates perfect, and moderate agreement between annotators. The wins, losses, and ties when comparing the combined model against the base model are indicated in percentages. No model was significantly better than another with a significance level of 0.05}{table.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}User Evaluation on an Manually Annotated Event}{7}{subsection.5.4}\protected@file@percent }
 \newlabel{sec:result_gen_event}{{5.4}{7}{User Evaluation on an Manually Annotated Event}{subsection.5.4}{}}
-\BKM@entry{id=12,dest={73656374696F6E2E36},srcline={347}}{5C3337365C3337375C303030365C3030305C3034305C303030435C3030306F5C3030306E5C303030635C3030306C5C303030755C303030735C303030695C3030306F5C3030306E5C3030305C3034305C303030615C3030306E5C303030645C3030305C3034305C303030465C303030755C303030745C303030755C303030725C303030655C3030305C3034305C303030575C3030306F5C303030725C3030306B}
+\BKM@entry{id=12,dest={73656374696F6E2E36},srcline={353}}{5C3337365C3337375C303030365C3030305C3034305C303030435C3030306F5C3030306E5C303030635C3030306C5C303030755C303030735C303030695C3030306F5C3030306E5C3030305C3034305C303030615C3030306E5C303030645C3030305C3034305C303030465C303030755C303030745C303030755C303030725C303030655C3030305C3034305C303030575C3030306F5C303030725C3030306B}
 \@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Fleiss' Kappa ($\kappa $) indicates substantial agreement between annotators. The wins, losses, and ties when comparing the combined model against the base model are indicated in percentages. The combined model was significantly better than the base model in generating adequate sentences.}}{8}{table.7}\protected@file@percent }
 \newlabel{tab:article_annotations}{{7}{8}{Fleiss' Kappa ($\kappa $) indicates substantial agreement between annotators. The wins, losses, and ties when comparing the combined model against the base model are indicated in percentages. The combined model was significantly better than the base model in generating adequate sentences}{table.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Future Work}{8}{section.6}\protected@file@percent }
@@ -101,12 +112,12 @@
 \bibcite{GPT-3}{{3}{2020}{{Brown et~al.}}{{Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, and Amodei}}}
 \bibcite{documenting_corpora}{{4}{2021}{{Dodge et~al.}}{{Dodge, Sap, Marasovi{\'c}, Agnew, Ilharco, Groeneveld, Mitchell, and Gardner}}}
 \bibcite{PLM_survey}{{5}{2021}{{Li et~al.}}{{Li, Tang, Zhao, and Wen}}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces BLEU, METEOR, and ROUGE scores per model on the generated text from the article}}{9}{table.8}\protected@file@percent }
-\newlabel{tab:article_auto_metrics}{{8}{9}{BLEU, METEOR, and ROUGE scores per model on the generated text from the article}{table.8}{}}
 \bibcite{semantic_coherence}{{6}{2022}{{Malkin et~al.}}{{Malkin, Wang, and Jojic}}}
 \bibcite{KG_survey}{{7}{2022}{{Ji et~al.}}{{Ji, Pan, Cambria, Marttinen, and Yu}}}
 \bibcite{gottschalk2019eventkg}{{8}{2019}{{Gottschalk and Demidova}}{{}}}
 \bibcite{hoffart2013yago2}{{9}{2013}{{Hoffart et~al.}}{{Hoffart, Suchanek, Berberich, and Weikum}}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces BLEU, METEOR, and ROUGE scores per model on the generated text from the article}}{9}{table.8}\protected@file@percent }
+\newlabel{tab:article_auto_metrics}{{8}{9}{BLEU, METEOR, and ROUGE scores per model on the generated text from the article}{table.8}{}}
 \bibcite{beyond_causality}{{10}{2022}{{Rebboud et~al.}}{{Rebboud, Lisena, and Troncy}}}
 \bibcite{sem_data_aug}{{11}{2023}{{Rebboud et~al.}}{{Rebboud, Lisena, and Troncy}}}
 \bibcite{gardent-etal-2017-creating}{{12}{2017}{{Gardent et~al.}}{{Gardent, Shimorina, Narayan, and Perez-Beltrachini}}}
@@ -128,5 +139,50 @@
 \bibcite{REBEL}{{28}{2021}{{Huguet~Cabot and Navigli}}{{}}}
 \bibcite{barhom-etal-2019-revisiting}{{29}{2019}{{Barhom et~al.}}{{Barhom, Shwartz, Eirew, Bugert, Reimers, and Dagan}}}
 \bibcite{KGtext}{{30}{2020}{{Chen et~al.}}{{Chen, Su, Yan, and Wang}}}
-\csxdef{lastpage}{12}
-\gdef \@abspage@last{11}
+\BKM@entry{id=13,dest={617070656E6469782E41},srcline={383}}{5C3337365C3337375C303030415C3030305C3034305C303030415C303030705C303030705C303030655C3030306E5C303030645C303030695C30303078}
+\BKM@entry{id=14,dest={73756273656374696F6E2E412E31},srcline={386}}{5C3337365C3337375C303030415C3030302E5C303030315C3030305C3034305C303030525C303030655C303030735C303030755C3030306C5C303030745C303030735C3030305C3034305C303030525C303030455C303030425C303030455C3030304C5C3030305C3034305C3030304D5C3030306F5C303030645C303030655C3030306C}
+\BKM@entry{id=15,dest={73756273656374696F6E2E412E32},srcline={439}}{5C3337365C3337375C303030415C3030302E5C303030325C3030305C3034305C303030455C303030765C303030655C3030306E5C303030745C3030305C3034305C303030635C3030306F5C303030725C303030655C303030665C303030655C303030725C303030655C3030306E5C303030635C303030655C3030305C3034305C303030725C303030655C303030735C3030306F5C3030306C5C303030755C303030745C303030695C3030306F5C3030306E}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix}{12}{appendix.A}\protected@file@percent }
+\newlabel{sec:appendix}{{A}{12}{Appendix}{appendix.A}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Results REBEL Model}{12}{subsection.A.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Detailed result for the validation dataset using the REBEL model}}{12}{table.9}\protected@file@percent }
+\newlabel{apx:val_result_rebel}{{9}{12}{Detailed result for the validation dataset using the REBEL model}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Detailed result for the test dataset using the REBEL model}}{12}{table.10}\protected@file@percent }
+\newlabel{apx:test_result_rebel}{{10}{12}{Detailed result for the test dataset using the REBEL model}{table.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Confusion matrix of relationships in the validation- and testset}}{12}{figure.1}\protected@file@percent }
+\newlabel{fig:confusion_matrix}{{1}{12}{Confusion matrix of relationships in the validation- and testset}{figure.1}{}}
+\BKM@entry{id=16,dest={73756273656374696F6E2E412E33},srcline={448}}{5C3337365C3337375C303030415C3030302E5C303030335C3030305C3034305C3030304A5C3030306F5C303030695C3030306E5C303030745C303030475C303030545C3030303A5C3030305C3034305C303030515C303030755C303030615C3030306C5C303030695C303030745C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030615C3030306E5C303030615C3030306C5C303030795C303030735C303030695C30303073}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Relationships in the REBEL train dataset}}{13}{table.11}\protected@file@percent }
+\newlabel{apx:rebel_rel}{{11}{13}{Relationships in the REBEL train dataset}{table.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Event coreference resolution}{13}{subsection.A.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Normalized distribution of the cluster sizes}}{13}{figure.2}\protected@file@percent }
+\newlabel{fig:norm_freq_cluster_size}{{2}{13}{Normalized distribution of the cluster sizes}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}JointGT: Qualitative analysis}{13}{subsection.A.3}\protected@file@percent }
+\newlabel{RF2}{14}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Sample of the WebNLG testset and the generated output of the base model.}}{14}{table.12}\protected@file@percent }
+\newlabel{tab:base_webnlgTestset}{{12}{14}{Sample of the WebNLG testset and the generated output of the base model}{table.12}{}}
+\newlabel{RF3}{15}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Sample of the FARO testset and the generated output of the base model}}{15}{table.13}\protected@file@percent }
+\newlabel{tab:base_faroTestset}{{13}{15}{Sample of the FARO testset and the generated output of the base model}{table.13}{}}
+\newlabel{RF4}{16}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Sample of the FARO testset and the generated output of the combined model}}{16}{table.14}\protected@file@percent }
+\newlabel{tab:combined_faroTestset}{{14}{16}{Sample of the FARO testset and the generated output of the combined model}{table.14}{}}
+\BKM@entry{id=17,dest={73756273656374696F6E2E412E34},srcline={496}}{5C3337365C3337375C303030415C3030302E5C303030345C3030305C3034305C303030475C303030655C3030306E5C303030655C303030725C303030615C303030745C303030695C3030306E5C303030675C3030305C3034305C303030745C303030655C303030785C303030745C3030305C3034305C303030665C303030725C3030306F5C3030306D5C3030305C3034305C303030735C303030655C3030306C5C303030655C303030635C303030745C303030655C303030645C3030305C3034305C303030655C303030765C303030655C3030306E5C303030745C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Generating text from selected events}{17}{subsection.A.4}\protected@file@percent }
+\newlabel{appx:selected_processed_events}{{A.4}{17}{Generating text from selected events}{subsection.A.4}{}}
+\BKM@entry{id=18,dest={73756273656374696F6E2E412E35},srcline={582}}{5C3337365C3337375C303030415C3030302E5C303030355C3030305C3034305C303030415C3030306E5C3030306E5C3030306F5C303030745C303030615C303030745C303030695C3030306F5C3030306E5C3030305C3034305C3030306F5C303030665C3030305C3034305C303030615C303030725C303030745C303030695C303030635C3030306C5C303030655C3030303A5C3030305C3034305C303030525C303030755C303030735C303030735C303030695C303030615C3030305C3034305C3030306C5C303030615C303030755C3030306E5C303030635C303030685C303030655C303030735C3030305C3034305C303030495C303030725C303030615C3030306E5C303030695C303030615C3030306E5C3030305C3034305C303030735C303030615C303030745C303030655C3030306C5C3030306C5C303030695C303030745C303030655C3030305C3034305C303030615C3030306D5C303030695C303030645C3030305C3034305C303030555C3030306B5C303030725C303030615C303030695C3030306E5C303030655C3030305C3034305C303030775C303030615C303030725C3030305C3034305C303030635C3030306F5C3030306E5C303030635C303030655C303030725C3030306E5C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}Annotation of article: Russia launches Iranian satellite amid Ukraine war concerns}{19}{subsection.A.5}\protected@file@percent }
+\newlabel{appx:article_annotation}{{A.5}{19}{Annotation of article: Russia launches Iranian satellite amid Ukraine war concerns}{subsection.A.5}{}}
+\BKM@entry{id=19,dest={73756273656374696F6E2E412E36},srcline={681}}{5C3337365C3337375C303030415C3030302E5C303030365C3030305C3034305C303030455C303030785C303030615C3030306D5C303030705C3030306C5C303030655C3030305C3034305C3030304E5C303030615C303030725C303030725C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030475C303030725C303030615C303030705C303030685C3030305C3034305C3030306F5C303030665C3030305C3034305C303030615C303030725C303030745C303030695C303030635C3030306C5C303030655C3030303A5C3030305C3034305C303030525C303030755C303030735C303030735C303030695C303030615C3030305C3034305C3030306C5C303030615C303030755C3030306E5C303030635C303030685C303030655C303030735C3030305C3034305C303030495C303030725C303030615C3030306E5C303030695C303030615C3030306E5C3030305C3034305C303030735C303030615C303030745C303030655C3030306C5C3030306C5C303030695C303030745C303030655C3030305C3034305C303030615C3030306D5C303030695C303030645C3030305C3034305C303030555C3030306B5C303030725C303030615C303030695C3030306E5C303030655C3030305C3034305C303030775C303030615C303030725C3030305C3034305C303030635C3030306F5C3030306E5C303030635C303030655C303030725C3030306E5C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.6}Example Narrative Graph of article: Russia launches Iranian satellite amid Ukraine war concerns}{23}{subsection.A.6}\protected@file@percent }
+\newlabel{RF5}{24}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Part of the constructed narrative graph of the article "Russia launches Iranian satellite amid Ukraine war concerns"}}{24}{figure.3}\protected@file@percent }
+\newlabel{fig:NG_article}{{3}{24}{Part of the constructed narrative graph of the article "Russia launches Iranian satellite amid Ukraine war concerns"}{figure.3}{}}
+\BKM@entry{id=20,dest={73756273656374696F6E2E412E37},srcline={689}}{5C3337365C3337375C303030415C3030302E5C303030375C3030305C3034305C3030304F5C303030765C303030655C303030725C303030765C303030695C303030655C303030775C3030305C3034305C3030304E5C303030615C303030725C303030725C303030615C303030745C303030695C303030765C303030655C3030305C3034305C303030475C303030725C303030615C303030705C30303068}
+\csxdef{lastpage}{25}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.7}Overview Narrative Graph}{25}{subsection.A.7}\protected@file@percent }
+\newlabel{RF6}{26}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Overview of the Narrative Graph}}{26}{figure.4}\protected@file@percent }
+\newlabel{fig:graph_overview}{{4}{26}{Overview of the Narrative Graph}{figure.4}{}}
+\global\csname @altsecnumformattrue\endcsname
+\gdef \@abspage@last{26}
