@@ -39,8 +39,8 @@
 %Type = Inproceedings
 \bibitem[{Malkin et~al.(2022)Malkin, Wang, and Jojic}]{semantic_coherence}
 \bibinfo{author}{N.~Malkin}, \bibinfo{author}{Z.~Wang}, \bibinfo{author}{N.~Jojic},
-\newblock \bibinfo{title}{{Coherence boosting: When your pretrained language model is not paying enough attention}},
-\newblock in: \bibinfo{booktitle}{60th Annual Meeting of the Association for Computational Linguistics}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Coherence boosting: When your pretrained language model is not paying enough attention},
+\newblock in: \bibinfo{editor}{S.~Muresan}, \bibinfo{editor}{P.~Nakov}, \bibinfo{editor}{A.~Villavicencio} (Eds.), \bibinfo{booktitle}{Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, \bibinfo{publisher}{Association for Computational Linguistics}, \bibinfo{address}{Dublin, Ireland}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{8214--8236}. \DOIprefix\doi{10.18653/v1/2022.acl-long.565}.
 %Type = Article
 \bibitem[{Ji et~al.(2022)Ji, Pan, Cambria, Marttinen, and Yu}]{KG_survey}
 \bibinfo{author}{S.~Ji}, \bibinfo{author}{S.~Pan}, \bibinfo{author}{E.~Cambria}, \bibinfo{author}{P.~Marttinen}, \bibinfo{author}{P.~S. Yu},
@@ -100,7 +100,7 @@
 \bibitem[{Yang and Tiddi(2020)}]{creative_story}
 \bibinfo{author}{X.~Yang}, \bibinfo{author}{I.~Tiddi},
 \newblock \bibinfo{title}{{Creative Storytelling with Language Models and Knowledge Graphs}},
-\newblock in: \bibinfo{booktitle}{International Conference on Information and Knowledge Management}, \bibinfo{year}{2020}.
+\newblock in: \bibinfo{editor}{S.~Conrad}, \bibinfo{editor}{I.~Tiddi} (Eds.), \bibinfo{booktitle}{CIKMW2020 Proceeding of the CIKM 2020 Workshops}, CEUR Workshop Proceedings, \bibinfo{publisher}{CEUR-WS}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{1--9}. \bibinfo{note}{2020 International Conference on Information and Knowledge Management Workshops, CIKMW 2020 ; Conference date: 19-10-2020 Through 23-10-2020}.
 %Type = Article
 \bibitem[{Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, and Sutskever}]{GPT-2}
 \bibinfo{author}{A.~Radford}, \bibinfo{author}{J.~Wu}, \bibinfo{author}{R.~Child}, \bibinfo{author}{D.~Luan}, \bibinfo{author}{D.~Amodei}, \bibinfo{author}{I.~Sutskever},
@@ -112,10 +112,10 @@
 \newblock \bibinfo{title}{{Investigating Pretrained Language Models for Graph-to-Text Generation}},
 \newblock in: \bibinfo{booktitle}{3rd Workshop on Natural Language Processing for Conversational AI}, \bibinfo{publisher}{ACL}, \bibinfo{address}{Online}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{211--227}.
 %Type = Inproceedings
-\bibitem[{Lewis et~al.(2019)Lewis, Liu, Goyal, Ghazvininejad, rahman Mohamed, Levy, Stoyanov, and Zettlemoyer}]{BART}
-\bibinfo{author}{M.~Lewis}, \bibinfo{author}{Y.~Liu}, \bibinfo{author}{N.~Goyal}, \bibinfo{author}{M.~Ghazvininejad}, \bibinfo{author}{A.~rahman Mohamed}, \bibinfo{author}{O.~Levy}, \bibinfo{author}{V.~Stoyanov}, \bibinfo{author}{L.~Zettlemoyer},
+\bibitem[{Lewis et~al.(2020)Lewis, Liu, Goyal, Ghazvininejad, Mohamed, Levy, Stoyanov, and Zettlemoyer}]{BART}
+\bibinfo{author}{M.~Lewis}, \bibinfo{author}{Y.~Liu}, \bibinfo{author}{N.~Goyal}, \bibinfo{author}{M.~Ghazvininejad}, \bibinfo{author}{A.~Mohamed}, \bibinfo{author}{O.~Levy}, \bibinfo{author}{V.~Stoyanov}, \bibinfo{author}{L.~Zettlemoyer},
 \newblock \bibinfo{title}{{BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension}},
-\newblock in: \bibinfo{booktitle}{Annual Meeting of the Association for Computational Linguistics}, \bibinfo{year}{2019}.
+\newblock in: \bibinfo{editor}{D.~Jurafsky}, \bibinfo{editor}{J.~Chai}, \bibinfo{editor}{N.~Schluter}, \bibinfo{editor}{J.~Tetreault} (Eds.), \bibinfo{booktitle}{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}, \bibinfo{publisher}{Association for Computational Linguistics}, \bibinfo{address}{Online}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{7871--7880}. \DOIprefix\doi{10.18653/v1/2020.acl-main.703}.
 %Type = Article
 \bibitem[{Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, and Liu}]{T5}
 \bibinfo{author}{C.~Raffel}, \bibinfo{author}{N.~Shazeer}, \bibinfo{author}{A.~Roberts}, \bibinfo{author}{K.~Lee}, \bibinfo{author}{S.~Narang}, \bibinfo{author}{M.~Matena}, \bibinfo{author}{Y.~Zhou}, \bibinfo{author}{W.~Li}, \bibinfo{author}{P.~J. Liu},
@@ -125,7 +125,7 @@
 \bibitem[{Koncel-Kedziorski et~al.(2019)Koncel-Kedziorski, Bekal, Luan, Lapata, and Hajishirzi}]{AGENDA_KG}
 \bibinfo{author}{R.~Koncel-Kedziorski}, \bibinfo{author}{D.~Bekal}, \bibinfo{author}{Y.~Luan}, \bibinfo{author}{M.~Lapata}, \bibinfo{author}{H.~Hajishirzi},
 \newblock \bibinfo{title}{{Text Generation from Knowledge Graphs with Graph Transformers}},
-\newblock in: \bibinfo{booktitle}{NAACL}, \bibinfo{year}{2019}.
+\newblock in: \bibinfo{editor}{J.~Burstein}, \bibinfo{editor}{C.~Doran}, \bibinfo{editor}{T.~Solorio} (Eds.), \bibinfo{booktitle}{Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)}, \bibinfo{publisher}{Association for Computational Linguistics}, \bibinfo{address}{Minneapolis, Minnesota}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{2284--2293}. \DOIprefix\doi{10.18653/v1/N19-1238}.
 %Type = Inproceedings
 \bibitem[{Ke et~al.(2021)Ke, Ji, Ran, Cui, Wang, Song, Zhu, and Huang}]{JointGT}
 \bibinfo{author}{P.~Ke}, \bibinfo{author}{H.~Ji}, \bibinfo{author}{Y.~Ran}, \bibinfo{author}{X.~Cui}, \bibinfo{author}{L.~Wang}, \bibinfo{author}{L.~Song}, \bibinfo{author}{X.~Zhu}, \bibinfo{author}{M.~Huang},
